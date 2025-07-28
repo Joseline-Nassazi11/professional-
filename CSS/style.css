@@ -1,0 +1,24 @@
+.dashboard {
+    background-color: darkslategrey
+}
+
+.container-fluid {
+    background-color: whitesmoke;
+    color: white;
+    min-width: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav {
+    background-color: white;
+    padding: 5px;
+}
