@@ -22,3 +22,18 @@ nav {
     background-color: white;
     padding: 5px;
 }
+/* .card {
+    width: 300px;
+    height: auto;
+} */
+ .card-img-top {
+    width: 400px; 
+    height: 400px;
+    
+    margin: 5%;
+    border-radius: 50px;
+ }
+ .card{
+    border-radius: 100px;
+    text-align: center;
+ }
