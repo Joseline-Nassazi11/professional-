@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MWF Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5cac3;
+        }
+
+        .sidebar {
+            height: 100vh;
+            background-color: #995d5d;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 220px;
+            padding-top: 20px;
+        }
+
+        .sidebar h4 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #ddd;
+            padding: 12px 20px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #495057;
+            color: #fff;
+        }
+
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+            
+        }
+
+        .product-img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+
+        .card {
+            border-radius: 90px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+           padding: 10px;
+           margin: 30px;
+        }
+
+    
+
+    </style>
+</head>
+
+<body>
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h4>MWF</h4>
+        <a href="manager-dashboard.html">Dashboard</a>
+        <!-- <a href="products.html">Products</a> -->
+        <a href="sales.html">Sales</a>
+        <a href="reports.html">Reports</a>
+        <a href="users.html">Users</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+     
+    <div class="main-content">
+        <div class="container">
+            <h2 class="mb-4 text-center">Our Products</h2>
+            <div class="row g-4">
+
+                <input type="text" id="searchBox" class="form-control mb-3" placeholder="Search products...">
+
+                <select id="sortPrice" class="form-select mb-3">
+                    <option value="">Sort by Price</option>
+                    <option value="low">Low to High</option>
+                    <option value="high">High to Low</option>
+                </select>
+
+
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/images/rawmaterial-4.jpeg" class="card-img-top product-img" alt="Sofa">
+                        <div class="card-body">
+                            <h5 class="card-title">Hard wood</h5>
+                            <p class="card-text">Durable and dense hardwood timber, ideal for premium furniture, flooring,
+                            and construction.</p>
+
+                            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+                            <p><strong>Price:</strong> UGX 35,000,000</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/images/rawmaterial-3.jpeg" class="card-img-top product-img" alt="Timber">
+                        <div class="card-body">
+                            <h5 class="card-title">Quality Timber</h5>
+                            <p class="card-text">High-quality hardwood timber, ideal for furniture making and
+                                construction.</p>
+
+                            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+                            <p><strong>Price:</strong> UGX 10,000,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/images/polllles.jpeg" class="card-img-top product-img" alt="Pantry Cabinet">
+                        <div class="card-body">
+                            <h5 class="card-title">Poles</h5>
+                            <p class="card-text">High-quality treated poles ideal for fencing, roofing, and outdoor
+                            construction.</p>
+                            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+                            <p><strong>Price:</strong> UGX 45,000,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more products here the same way -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/images/Long-poles.jpeg" class="card-img-top product-img" alt="Sofa">
+                        <div class="card-body">
+                            <h5 class="card-title">Timber polest</h5>
+                            <p class="card-text">High-quality treated timber poles ideal for fencing, roofing. Pressure-treated for durability.</p>
+                
+                            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+                
+                            <p><strong>Price:</strong> UGX 35,000,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/images/raw-22.jpeg" class="card-img-top product-img" alt="Sofa">
+                        <div class="card-body">
+                            <h5 class="card-title">Hard timber poles</h5>
+                            <p class="card-text">Strong and long-lasting hardwood timber poles . Naturally resistant to pests, decay, and weather</p>
+                
+                            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+                
+                            <p><strong>Price:</strong> UGX 35,000,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/images/raw33.jpeg" class="card-img-top product-img" alt="Sofa">
+                        <div class="card-body">
+                            <h5 class="card-title">Rosewood</h5>
+                            <p class="card-text">Strong and long-lasting hardwood timber poles ideal for heavy-duty
+                            applications .</p>
+                
+                            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+                
+                            <p><strong>Price:</strong> UGX 35,000,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/images/rawmaterial-1.jpeg" class="card-img-top product-img" alt="Sofa">
+                        <div class="card-body">
+                            <h5 class="card-title">Maple</h5>
+                            <p class="card-text">Hard, light-colored wood used in flooring and kitchen furniture.</p>
+                
+                            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+                
+                            <p><strong>Price:</strong> UGX 35,000,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/images/rawmaterial-2.jpeg" class="card-img-top product-img" alt="Sofa">
+                        <div class="card-body">
+                            <h5 class="card-title">Muvule</h5>
+                            <p class="card-text"> This hardwood is strong, termite-resistant.</p>
+                
+                            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+                
+                            <p><strong>Price:</strong> UGX 35,000,000</p>
+                        </div>
+                    </div>
+                </div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="card">
+        <img src="/images/kitcheeee.jpeg" class="card-img-top product-img" alt="Sofa">
+        <div class="card-body">
+            <h5 class="card-title">Pantry Cabinate</h5>
+            <p class="card-text">A tall, enclosed cabinet used to store dry food.</p>
+
+            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+            <p><strong>Price:</strong> UGX 35,000,000</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="card">
+        <img src="/images/kitchen-1.jpeg" class="card-img-top product-img" alt="Sofa">
+        <div class="card-body">
+            <h5 class="card-title">Open-shelf cupboard</h5>
+            <p class="card-text">A large, often luxurious desk used by managers or executive.</p>
+
+            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+            <p><strong>Price:</strong> UGX 35,000,000</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+    <div class="card">
+        <img src="/images/kitchen-2.jpeg" class="card-img-top product-img" alt="Sofa">
+        <div class="card-body">
+            <h5 class="card-title">Tell Pantry Units</h5>
+            <p class="card-text">Full-height cupboards for storing groceries and bulk items</p>
+
+            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+            <p><strong>Price:</strong> UGX 35,000,000</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="col-md-6 col-lg-4">
+    <div class="card">
+        <img src="/images/kitch.jpeg" class="card-img-top product-img" alt="Sofa">
+        <div class="card-body">
+            <h5 class="card-title">Kitchen Table</h5>
+            <p class="card-text">Durable hardwood kitchen table suitable for modern
+            homes and restaurants.</p>
+
+            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+            <p><strong>Price:</strong> UGX 35,000,000</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="col-md-6 col-lg-4">
+    <div class="card">
+        <img src="/images/cupLight-Wood.jpeg" class="card-img-top product-img" alt="Sofa">
+        <div class="card-body">
+            <h5 class="card-title"> Base Cabinet</h5>
+            <p class="card-text">Store pots, pans,and cooking tools</p>
+
+            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+            <p><strong>Price:</strong> UGX 35,000,000</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+    <div class="card">
+        <img src="/images/pink.jpeg" class="card-img-top product-img" alt="Sofa">
+        <div class="card-body">
+            <h5 class="card-title">Sofa Set</h5>
+            <p class="card-text">Elegant sofa set crafted with soft upholstery and solid wood frame.</p>
+
+            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+            <p><strong>Price:</strong> UGX 35,000,000</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="col-md-6 col-lg-4">
+    <div class="card">
+        <img src="/images/drawer-1.jpeg" class="card-img-top product-img" alt="Sofa">
+        <div class="card-body">
+            <h5 class="card-title">Chest of Drawers</h5>
+            <p class="card-text">A standalone wooden cabinet with multiple drawers .</p>
+
+            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+            <p><strong>Price:</strong> UGX 35,000,000</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="card">
+        <img src="/images/ceo-1.jpeg" class="card-img-top product-img" alt="Sofa">
+        <div class="card-body">
+            <h5 class="card-title">Executive Desk</h5>
+            <p class="card-text">A large, often luxurious desk used by managers or executives.</p>
+
+            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+            <p><strong>Price:</strong> UGX 35,000,000</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="card">
+        <img src="/images/office interior.jpeg" class="card-img-top product-img" alt="Sofa">
+        <div class="card-body">
+            <h5 class="card-title">Wooden Wardrobe</h5>
+            <p class="card-text">Spacious wardrobe with multiple shelves and stylish handles.</p>
+
+            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+
+            <p><strong>Price:</strong> UGX 35,000,000</p>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card">
+        <img src="/images/board-room.jpeg" class="card-img-top product-img img-fluid mx-auto d-block mt-5" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Executive Desk</h5>
+            <p class="card-text"> Usually made of hardwood like mahogany or oak. </p>
+
+            <button class="btn btn-primary btn-sm add-to-cart">Add to Cart</button>
+            <p><strong>Price:</strong> UGX 35,000,000</p>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card">
+        <img src="/images/bed.jpeg" class="card-img-top product-img img-fluid mx-auto d-block mt-5" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Sofa Set</h5>
+            <p class="card-text">Elegant sofa set crafted with soft upholstery and
+                <br>
+                solid wood frame.
+            </p>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="product-catalog.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

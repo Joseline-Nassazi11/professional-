@@ -1,5 +1,5 @@
 .dashboard {
-    background-color: darkslategrey
+    background-color: #04AA6D
 }
 
 .container-fluid {
@@ -22,18 +22,69 @@ nav {
     background-color: white;
     padding: 5px;
 }
-/* .card {
-    width: 300px;
-    height: auto;
-} */
+/*
  .card-img-top {
-    width: 400px; 
-    height: 400px;
+    width: 50px; 
+    height: 50px;
     
     margin: 5%;
     border-radius: 50px;
  }
  .card{
-    border-radius: 100px;
+    border-radius: 50px;
     text-align: center;
+    background-color: #006400;
+    color: white;
  }
+
+
+ body {
+    margin: 0;
+    padding: 0;
+ }
+
+ .grid-container {
+    display: grid;
+    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+    "sidebar header header header"
+    "sidebar main main main";
+    height: 100vh;
+ }
+
+Header 
+ .header {
+    grid-area: header;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+ }
+
+ Sidebar
+ #sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    background-color: #263043;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s;
+ }
+
+ Main 
+ .main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+    color: rgba(255, 255, 225, 0.95);
+ }*/
+
+
+
+
+
+
+
+ 
