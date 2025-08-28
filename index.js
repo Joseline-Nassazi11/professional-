@@ -89,8 +89,6 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   }
 });
 
-// ================= For dashboard page only =================
-
 // Populate table dynamically
 function loadUsers() {
   const tbody = document.querySelector("#usersTable tbody");
